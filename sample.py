@@ -18,6 +18,16 @@ def multiply_numbers(a, b):
 
 # ---
 
+def divide_numbers(a, b):
+    """
+    Divides the first number by the second.
+    Throws a warning and returns None if the divisor is zero.
+    """
+    if b == 0:
+        # Using sys.stderr to print the warning to the standard error stream
+        print("⚠️ Warning: Cannot divide by zero!", file=sys.stderr)
+        return None
+    return a / b
 
 # ---
 
@@ -47,12 +57,21 @@ def main():
     prod_result = multiply_numbers(x, y)
     print(f"Result: {prod_result}") # Output: 50
 
+    ## 4. Division (Successful Case)
+    print(f"\n4. Dividing {x} by {y}:")
+    div_result_ok = divide_numbers(x, y)
+    print(f"Result: {div_result_ok}") # Output: 2.0
+
+    ## 4. Division (Zero-Division Case)
+    print(f"\n4. Dividing {x} by {z} (Zero-Division Test):")
+    div_result_fail = divide_numbers(x, z)
+    # The warning will be printed by the function itself
+    print(f"Result: {div_result_fail}") # Output: None
 
 # ---
 
 # Standard Python idiom to call the main function when the script is executed
 if __name__ == "__main__":
     main()
-
 
 
