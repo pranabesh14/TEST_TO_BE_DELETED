@@ -1,8 +1,8 @@
 import sys
 
-def add_numbers(a, b):
-    """Adds two numbers and returns the result."""
-    return a + b
+#def add_numbers(a, b):
+#    """Adds two numbers and returns the result."""
+#    return a + b
 
 # ---
 
@@ -12,9 +12,9 @@ def subtract_numbers(a, b):
 
 # ---
 
-def multiply_numbers(a, b):
-    """Multiplies two numbers and returns the result."""
-    return a * b
+#def multiply_numbers(a, b):
+#    """Multiplies two numbers and returns the result."""
+#    return a * b
 
 # ---
 
@@ -43,9 +43,9 @@ def main():
     print(f"--- Testing with numbers x={x}, y={y}, z={z} ---")
 
     ## 1. Addition
-    print(f"\n1. Adding {x} and {y}:")
-    sum_result = add_numbers(x, y)
-    print(f"Result: {sum_result}") # Output: 15
+    #print(f"\n1. Adding {x} and {y}:")
+    #sum_result = add_numbers(x, y)
+    #print(f"Result: {sum_result}") # Output: 15
 
     ## 2. Subtraction
     print(f"\n2. Subtracting {y} from {x}:")
@@ -53,9 +53,9 @@ def main():
     print(f"Result: {diff_result}") # Output: 5
 
     ## 3. Multiplication
-    print(f"\n3. Multiplying {x} and {y}:")
-    prod_result = multiply_numbers(x, y)
-    print(f"Result: {prod_result}") # Output: 50
+    #print(f"\n3. Multiplying {x} and {y}:")
+    #prod_result = multiply_numbers(x, y)
+    #print(f"Result: {prod_result}") # Output: 50
 
     ## 4. Division (Successful Case)
     print(f"\n4. Dividing {x} by {y}:")
